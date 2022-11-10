@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Estil del body */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* Títol logo */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #ffffff;
+    color: #EC6798;
+}
+
+/* Augmentar el tamany del títol */
+.header h1 {
+    font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Estil de barra de navegació */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Enganxat a la dreta */
+.navbar a.right {
+    float: right;
+}
+
+/* Canvi de color al ficar el ratolí */
+.navbar a:hover {
+    background-color: #29B1E3;
+    color: black;
+}
+
+/* Contenedor de columna */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Crea dos columnes */
+/* Columna de l'esquerra */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Columna principal */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fondo del text(ciutats)*/
+.Text {
+    background-color: rgb(175, 171, 171);
+    width: 100%;
+    padding: 20px;  
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #43B863;
+}
+
+
+/* Responsive layout*/
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout*/
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
